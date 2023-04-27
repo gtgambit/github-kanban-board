@@ -11,9 +11,8 @@ Done (closed issues)
 User should be able to drag-n-drop between the columns and change the order of issues.
 Current issue position (column and order) should be stored between search and browser sessions. When the user loads issues for Repo1 -> Repo2 -> Repo1 he should see all changes he did for Repo1.
 User should be able to visit the profile of the owner of the repo and visit the repo as well by links under the input.
-Technologies
-You should use exactly the listed technologies or one of them if it is allowed:
 
+Technologies:
 React 18 with hooks
 Typescript
 UI library:
@@ -24,4 +23,3 @@ Testing (on your choice):
 React Testing Library
 any other library you need
 Assessment
-What will we assess:
