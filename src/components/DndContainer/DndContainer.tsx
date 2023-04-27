@@ -1,8 +1,10 @@
 import React, { FC } from "react";
-import { DragDropContext, DropResult } from "react-beautiful-dnd";
 import { allStateSelector } from "../../redux/tasksSlice/taskSelectors";
 import { useSelector, useDispatch } from "react-redux";
 import { InitialState, updateTasks } from "../../redux/tasksSlice/tasks";
+
+import { DragDropContext, DropResult } from "react-beautiful-dnd";
+
 import { Columns } from "../Columns/Columns";
 import { TaskProps } from "../../types/types";
 

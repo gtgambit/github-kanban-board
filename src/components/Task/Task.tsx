@@ -1,6 +1,6 @@
+import React, { FC } from "react";
 import { Card } from "antd";
 import Meta from "antd/lib/card/Meta";
-import React, { FC } from "react";
 import { TaskProps } from "../../types/types";
 
 interface ITask {

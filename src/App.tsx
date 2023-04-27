@@ -1,16 +1,18 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { useDispatch } from "react-redux";
+
+import { useDispatch, useSelector } from "react-redux";
 import { getTasks } from "./redux/tasksSlice/thunkTasks";
+import { NotificationError } from "./components/NotificationError/NotificationError";
+import { tasksErrorSelector } from "./redux/tasksSlice/taskSelectors";
+import { updateTasks } from "./redux/tasksSlice/tasks";
+
 import { DndContainer } from "./components/DndContainer/DndContainer";
 import { InputComponent } from "./components/InputComponent/InputComponent";
 import { Layout, Typography } from "antd"; // import Typography from Ant Design
-import { updateTasks } from "./redux/tasksSlice/tasks";
+
 import { Loader } from "./components/Loader/Loader";
 import { tasksIsLoadingSelector } from "./redux/tasksSlice/taskSelectors";
-import { useSelector } from "react-redux";
 import { BreadcrumbSection } from "./components/BreadCrumbsSection/BreadCrumbsSection";
-import { NotificationError } from "./components/NotificationError/NotificationError";
-import { tasksErrorSelector } from "./redux/tasksSlice/taskSelectors";
 
 const { Title } = Typography; // destructure Title component from Typography
 

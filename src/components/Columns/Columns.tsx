@@ -1,10 +1,13 @@
 import React, { FC } from "react";
-import { Draggable, Droppable } from "react-beautiful-dnd";
+
 import { allStateSelector } from "../../redux/tasksSlice/taskSelectors";
 import { useSelector } from "react-redux";
-import { TaskProps } from "../../types/types";
-import { Task } from "../Task/Task";
+
+import { Draggable, Droppable } from "react-beautiful-dnd";
 import { Row, Col, Typography } from "antd";
+
+import { Task } from "../Task/Task";
+import { TaskProps } from "../../types/types";
 
 const { Title } = Typography;
 
