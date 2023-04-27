@@ -28,7 +28,10 @@ export const Columns: FC = () => {
   const data = useSelector(allStateSelector) as Data;
 
   return (
-    <Row gutter={10} className="kanban-board">
+    <Row
+      gutter={10}
+      className="kanban-board"
+      style={{ justifyContent: "center" }}>
       {Object.entries(data).map(([listId, list]) => {
         if (listId === "isLoading" || listId === "error") {
           return null;
