@@ -1,7 +1,7 @@
-import React from "react";
+import React, { FC } from "react";
 import { Space, Spin } from "antd";
 
-export const Loader: React.FC = () => {
+export const Loader: FC = () => {
   return (
     <Space
       size="large"

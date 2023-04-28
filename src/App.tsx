@@ -5,13 +5,13 @@ import { getTasks } from "./redux/tasksSlice/thunkTasks";
 import { NotificationError } from "./components/NotificationError/NotificationError";
 import { tasksErrorSelector } from "./redux/tasksSlice/taskSelectors";
 import { updateTasks } from "./redux/tasksSlice/tasks";
+import { tasksIsLoadingSelector } from "./redux/tasksSlice/taskSelectors";
 
 import { DndContainer } from "./components/DndContainer/DndContainer";
 import { InputComponent } from "./components/InputComponent/InputComponent";
 import { Layout, Typography } from "antd"; // import Typography from Ant Design
 
 import { Loader } from "./components/Loader/Loader";
-import { tasksIsLoadingSelector } from "./redux/tasksSlice/taskSelectors";
 import { BreadcrumbSection } from "./components/BreadCrumbsSection/BreadCrumbsSection";
 
 const { Title } = Typography; // destructure Title component from Typography
