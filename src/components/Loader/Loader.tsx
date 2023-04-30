@@ -14,7 +14,7 @@ export const Loader: FC = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        zIndex: 9999,
+        zIndex: 50,
       }}>
       <Spin size="large" />
     </Space>
