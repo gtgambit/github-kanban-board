@@ -57,7 +57,7 @@ export const InputComponent: FC<InputComponentProps> = ({
           <Button
             type="primary"
             onClick={handleSubmit}
-            style={{ marginLeft: "8px", padding: "12px", width: "100%" }}
+            style={{ marginLeft: "8px", padding: "4px", width: "100%" }}
             disabled={isDisabled}>
             Load Issue
           </Button>
